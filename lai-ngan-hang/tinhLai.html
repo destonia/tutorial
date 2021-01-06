@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Lãi kép sau n tháng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = parseInt(prompt("nhập số tiền"));
+    let y = parseFloat(prompt("nhập lãi suất"));
+    let n = parseInt(prompt("nhập số tháng"));
+    let i;
+    let t;
+    let l ='';//biến chứa kết quả
+    for (i = 1; i <= n; i++) {
+        t = (x * ((1 + y) ** i)).toFixed(3);
+        l +="Số tiền lãi sau " + i + " tháng là " + t + "<br>";
+    }
+    document.write(l);
+</script>
+</html>
