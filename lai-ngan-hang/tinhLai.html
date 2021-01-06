@@ -11,9 +11,9 @@
     let x = parseInt(prompt("nhập số tiền"));
     let y = parseFloat(prompt("nhập lãi suất"));
     let n = parseInt(prompt("nhập số tháng"));
-    let i;
-    let t;
-    let l ='';//biến chứa kết quả
+    let i;//biến đếm
+    let t;//chứa kết quả tính toán
+    let l ='';//biến chứa danh sách kết quả
     for (i = 1; i <= n; i++) {
         t = (x * ((1 + y) ** i)).toFixed(3);
         l +="Số tiền lãi sau " + i + " tháng là " + t + "<br>";
